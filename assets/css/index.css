@@ -249,4 +249,7 @@ body{
   #flex-basis{
     width: 16rem;
   }
+  #conteiner-align-content img{
+    width:7rem;
+  }
 }
