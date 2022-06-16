@@ -205,18 +205,30 @@ body{
 }
 
 @media(max-width:800px){
-  /*#first-img-content{
+  #container-subtitle{
+    width: 100%;
+    display: flex;
     flex-direction: column;
-  }*/
+  }
   #main-containerfirst{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  #first-img-content{
+    flex-direction: column;
+  }
+  #first-img-content img{
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   #father-propriets{
     width:100%;
   }
   #son-propriets{
     width:100%;
+  }
+  .container-information{
+    width: 80%;
   }
 }
