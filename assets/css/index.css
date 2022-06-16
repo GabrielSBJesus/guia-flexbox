@@ -241,9 +241,12 @@ body{
     width:15rem;
   }
   #img-gap{
-    width:11rem;
+    width:15rem;
   }
   .container-order img{
     width:13rem;
+  }
+  #flex-basis{
+    width: 16rem;
   }
 }
