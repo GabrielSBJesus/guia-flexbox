@@ -37,14 +37,15 @@
         </section>
     
         <section id="main-containerfirst">
-            <article id="father-propriets">
-                    <h2>Propriedades do pai</h2>
+            <div id="father-propriets">
+                    <h2>Propriedades para o pai
+                        (Container flex)</h2>
                 <div class="container-information">
                     <h3>display</h3><br>
                     <p>
                         Isso define um  contêiner flexível; inline ou block dependendo dovalor fornecido. Ele habilita um contexto flexível para todos os seus filhos diretos.
                     </p>
-                    <img id="flex-remove" src="assets/img-site/code-removebg-preview.png" alt="">
+                    <img id="flex-remove" src="assets/img-site/alignself/code2-removebg-preview 1.svg" alt="">
                     <p>
                         Observe que as colunas CSS não têm efeito em um contêiner flexível.
                     </p>
@@ -223,7 +224,95 @@
                         Não é exclusivamente para flexbox, o gap funciona também em layout de grade e multi-column.  
                     </p>
                 </div>
-            </article>
+            </div>
+
+            <div id="son-propriets">
+                <h2 >Propriedades para o filho
+                    (items flex)</h2>
+                    <div class="container-information">
+                        <h3>order</h3><br>
+                        <div class="container-order">
+                        <img src="assets/img-site/order/first.svg" alt="">
+                        <img src="assets/img-site/order/second.svg" alt="">
+                        <img src="assets/img-site/order/thrist.svg" alt="">
+                        </div>
+                        <p>
+                            Por padrão, os itens flexíveis são dispostos na ordem de origem. No entanto, a propriedade order controla a ordem em que eles aparecem no contêiner flexível.  
+                        </p>
+    
+                        <img class="img-gap" src="assets/img-site/order/code.svg" alt="">
+                        <p>
+                            Itens com a mesma ordem revertem para a ordem de origem.   
+                        </p>
+                    </div>  
+                    
+                    <div class="container-information">
+                        <h3>flex-grow</h3><br>
+                        <div class="container-order">
+                        <img src="assets/img-site/flexgrow/first.svg" alt="">
+                        <img src="assets/img-site/flexgrow/second.svg" alt="">
+                        </div>
+                        <p>
+                            Isso define a capacidade de um item flexível crescer, se necessário. Aceita um valor sem unidade que serve como proporção. Ele determina a quantidade de espaço disponível dentro do contêiner flexível que o item deve ocupar.
+                            <br><br>
+                            Se todos os itens tiverem flex-grow definido como 1, o espaço restante no contêiner será distribuído igualmente para todos os filhos. Se uma das crianças tiver um valor de 2, essa criança ocupará o dobro do espaço de qualquer uma das outras (ou tentará, pelo menos).  
+                        </p>
+    
+                        <img class="img-gap" src="assets/img-site/flexgrow/code.svg" alt="">
+                        <p>
+                            Números negativos são invalidos.
+                        </p>
+                    </div>  
+                    
+                    <div class="container-information">
+                        <h3>flex-shrink</h3><br>
+                        <p>
+                            Isso define a capacidade de um item flexível diminuir, se necessário. 
+                        </p>
+    
+                        <img id="shrink-img" src="assets/img-site/flex-shrink/codeflexshrink-removebg-preview.svg" alt="">
+                        <p>
+                            Números negativos são invalidos.
+                        </p>
+                    </div>
+                    
+                    <div class="container-information">
+                        <h3>flex-basis</h3><br>
+                        <p>
+                            Isso define o tamanho padrão de um elemento antes que o espaço restante seja distribuído. Pode ser um comprimento (por exemplo, 20%, 5rem, etc.) ou uma palavra-chave. A palavra-chave auto significa “olhar para minha propriedade largura ou altura” (o que foi temporariamente feito pela palavra-chave main-size até ser descontinuada). A palavra-chave de conteúdo significa “dimensionar com base no conteúdo do item” – essa palavra-chave ainda não é bem suportada, por isso é difícil testar e mais difícil saber o que seus irmãos max-content, min-content e fit-content fazem.
+                        </p>
+    
+                        <img  id="flex-basis" src="assets/img-site/flexbasis/codeflexbasis-removebg-preview 1.svg" alt="">
+                    </div>
+                    
+                    <div class="container-information">
+                        <h3>flex</h3><br>
+                        <p>
+                            Esta é a abreviação de flex-grow, flex-shrink e flex-base combinados. O segundo e terceiro parâmetros (flex-shrink e flex-basis) são opcionais. O padrão é 0 1 auto, mas se você definir com um único valor numérico, como flex: 5; , isso altera o flex-basis para 0%, então é como configurar flex-grow: 5; encolhimento flexível: 1; base flexível: 0%;.
+                        </p>
+    
+                        <img  id="flex" src="assets/img-site/flex/codeflex-fococlipping-standard 1.svg" alt="">
+
+                        <p>
+                            É recomendável que você use essa propriedade abreviada em vez de definir as propriedades individuais. A taquigrafia define os outros valores de forma inteligente.
+                        </p>
+                    </div> 
+
+                    <div class="container-information">
+                        <h3>align-self</h3><br>
+                        <p>
+                            Isso permite que o alinhamento padrão (ou o especificado por align-items) seja substituído por itens flexíveis individuais.
+
+                            Por favor, veja a explicação align-items para entender os valores disponíveis.
+                        </p>
+    
+                        <img  id="alignself" src="assets/img-site/alignself/codeflex2-removebg-preview 1.svg" alt="">
+
+                        <p>
+                            Observe que float, clear e vertical-align não têm efeito em um item flexível.
+                        </p>
+                    </div> 
+            </div>
         </section>  
       
 </body>
