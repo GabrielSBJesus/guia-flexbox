@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia flexbox</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <header id="title">
+        <h1>FlexBox</h1>
+    </header>
+      
+        <article id="container-subtitle">
+        <h2>Layout<br> Flex<br> Box</h2>
+        <img src="assets/img-site/Frame 38.png" alt="imagem-box-flex">
+        </article>
+      
+        <article id="container-firstguia">
+        <p>
+            Um guia completo para layout CSS flexbox.<br>
+            Este guia completo explica o minímo sobre<br> 
+            flexbox, focando em todas as diferentes<br> 
+            propriedades possíveis para o elemento pai<br> 
+            (o contêiner flex) e os elementos filho (os itens flex).<br> 
+            Ele também inclui histórico, demonstrações, padrões<br>
+            e um gráfico de suporte do navegador.
+        </p>
+        </article>
+      
+        <h2 id="title-propriets">Propriedades Flexbox</h2>
+
+        <section id="first-img-content">
+        <img src="assets/img-site/container.png" alt="container">
+        <img src="assets/img-site/firtsItems.png" alt="firtsItems">
+        </section>
+    
+        <section id="main-containerfirst">
+            <article id="father-propriets">
+                    <h2>Propriedades do pai</h2>
+                <div class="container-information">
+                    <h3>display</h3><br>
+                    <p>
+                        Isso define um  contêiner flexível; inline ou block dependendo dovalor fornecido. Ele habilita um contexto flexível para todos os seus filhos diretos.
+                    </p>
+                    <img id="flex-remove" src="assets/img-site/code-removebg-preview.png" alt="">
+                    <p>
+                        Observe que as colunas CSS não têm efeito em um contêiner flexível.
+                    </p>
+                </div>
+
+                <div class="container-information">
+                    <h3>Flex-direction</h3>
+                    <img class ="pointer" src="assets/img-site/flexdrection.png" alt="">
+                    <img class="pointer" src="assets/img-site/flexdirection2png.png " alt="">
+            
+                    <p>
+                        Isso estabelece o eixo principal, definindo assim a direção em que os itens flexíveis são colocados no contêiner flexível. Flexbox é (além da embalagem opcional) um, conceito de layout de direção única. Pense nos itens flexíveis como principalmente dispostos em linhas horizontais ou colunas verticais.
+                    </p>
+                    <div class="conteiner-scroll">
+                        <img id="flex-direction" src="assets/img-site/flex-direction.png" alt="">
+                    </div>
+                    <p>
+                        <strong>row (default)</strong>:da esquerda para a 
+                        direita em ltr; direita para 
+                        esquerda em rtl.<br><br>
+                        <strong>row-reverse</strong>:da direita para a, 
+                        esquerda em ltr; da esquerda para
+                        a direita em rtl.<br><br>
+                        <strong>column</strong>:igual o row, mas de cima
+                        para baixo.<br><br>
+                        <strong>column-reverse</strong>:igual ao reverso
+                        da row, mas de baixo para cima
+                    </p>
+                
+                </div>
+
+                <div class="container-information">
+                    <h3>flex-wrap</h3><br>
+                    <p>
+                        Por padrão, todos os itens flexíveis tentarão caber em uma linha. Você pode alterar isso e permitir que os itens sejam agrupados conforme necessário com essa propriedade.
+                    </p>
+                    <div class="container-img">
+                        <img id="wrap-img" src="assets/img-site/flex-wrap.png" alt="">
+                    </div>
+                    <p>
+                        <strong>nowrap (padrão)</strong>
+                        : todos os itens flexíveis estarão em uma linha.<br><br>
+                        <strong>wrap</strong>: os itens flexíveis serão agrupados em várias linhas, de cima para baixo.<br><br>
+                        <strong>wrap-reverse</strong>: os itens flexíveis serão agrupados
+                        em várias linhas de baixo para cima.
+                    </p>
+                </div>
+
+                <div class="container-information">
+                    <h3>justify-content</h3><br>
+                    <div id="container-justify">
+                        <img class="justify-img" src="assets/img-site/justify-content/flexstart.png" alt="flexstart-img">
+
+                        <img class="justify-img" src="assets/img-site/justify-content/flexend.png" alt="flexend-img">
+
+                        <img class="justify-img" src="assets/img-site/justify-content/flexcenter.png" alt="flexcenter-img">
+
+                        <img class="justify-img" src="assets/img-site/justify-content/spacebetween.png" alt="spacebetween-img">
+
+                        <img class="justify-img" src="assets/img-site/justify-content/spacearound.png" alt="spacearound-img">
+
+                        <img class="justify-img" src="assets/img-site/justify-content/spaceevelyn.png" alt="spaceevelyn-img">
+                    </div>
+                    <p>
+                        Isso define o alinhamento ao longo do eixo principal. Ele ajuda a distribuir espaço livre extra quando todos os itens flexíveis em uma linha são 
+                        inflexíveis ou são flexíveis, mas atingiram seu tamanho máximo. Ele também exerce algum
+                        controle sobre o alinhamento dos itens quando 
+                        eles ultrapassam a linha.
+                    </p>
+                    <div class="conteiner-scroll">
+                        <img src="assets/img-site/codejustifycontet-removebg-preview.png" alt="">
+                    </div>
+                    <p>
+                        <strong>flex-start (padrão)</strong>: os itens são empacotados no início da flex-direction.<br><br>
+
+                        <strong>flex-end</strong>: os itens são empacotados no final da flex-direction.<br><br>
+
+                        <strong>start</strong>
+                        : os itens são empacotados no início da direção do modo de escrita.<br><br>
+
+                        <strong>end</strong>: os itens são empacotados no final da direção do modo de escrita.<br><br>
+
+                        <strong>left</strong>: os itens são empacotados em direção à borda esquerda do contêiner, a menos que isso não faça sentido com o flex-direction, então ele se comporta como start.<br><br>
+
+                        <strong>right</strong>: os itens são empacotados na borda direita do contêiner, a menos que isso não faça sentido com o flex-direction, então ele se comporta como start.<br><br>
+
+                        <strong>center</strong>: os itens são centralizados ao longo da linha.<br><br>
+
+                        <strong>space-between</strong>: os itens são distribuídos uniformemente na linha; primeiro item está na linha inicial, último item na linha final.<br><br>
+
+                        <strong>space-around</strong>: os itens são distribuídos uniformemente na linha com espaço igual ao redor deles. Observe que visualmente os espaços não são iguais, pois todos os itens possuem espaços iguais em ambos os lados. O primeiro item terá uma unidade de espaço contra a borda do contêiner, mas duas unidades de espaço entre o próximo item porque esse próximo item tem seu próprio espaçamento que se aplica.<br><br>
+
+                        <strong>space-evenly</strong>: os itens são distribuídos de forma que o espaçamento entre quaisquer dois itens (e o espaço até as bordas) seja igual.<br><br>
+                    </p>
+                </div>
+
+                <div class="container-information">
+                    <h3>align-items</h3><br>
+                    <div id="align-items">
+                        <img src="assets/img-site/align-items/flexstart.svg" alt="">
+                        <img src="assets/img-site/align-items/flexend.svg" alt="">
+                        <img src="assets/img-site/align-items/center.svg" alt="">
+                        <img src="assets/img-site/align-items/stretch.svg" alt="">
+                    </div>
+                    <div id="align-items-baseline">
+                        <img src="assets/img-site/align-items/baseline.svg" alt="">
+                    </div>
+                    <p>
+                        Isso define o comportamento padrão de como os itens flexíveis são dispostos ao longo do eixo cruzado na linha atual. Pense nisso como a versão de conteúdo justificado para o eixo cruzado (perpendicular ao eixo principal).
+                    </p>
+                    <div class="conteiner-scroll">
+                        <img id="conteiner-scroll-align" src="assets/img-site/align-items/code.svg" alt="">
+                    </div>
+                    <p>
+                        <strong>stretch (padrão)</strong>: esticar para encher o contêiner (ainda respeita min-width/max-width).<br><br>
+                        <strong>flex-start / start / self-start</strong>: os itens são colocados no início do eixo cruzado. A diferença entre eles é sutil, e se trata de respeitar as regras de direção flexível ou as regras do modo de escrita.<br><br>
+
+                        <strong>flex-end / end / self-end</strong>: os itens são colocados no final do eixo cruzado. A diferença novamente é sutil e é sobre respeitar as regras de direção flexível versus as regras do modo de escrita.<br><br>
+
+                        <strong>center</strong>: os itens são centralizados no eixo cruzado.<br><br>
+
+                        <strong>baseline</strong>: os itens são alinhados como suas linhas de base se alinham.
+                    </p>
+                </div>
+
+                <div class="container-information">
+                    <h3>align-content</h3><br>
+                    <div id="conteiner-align-content">
+                    <img src="assets/img-site/align-content/flexstart.svg" alt="">
+                    <img src="assets/img-site/align-content/flexend.svg" alt="">
+                    <img src="assets/img-site/align-content/center.svg" alt="">
+                    <img src="assets/img-site/align-content/stretch.svg" alt="">
+                    <img src="assets/img-site/align-content/spacebetween.svg" alt="">
+                    <img src="assets/img-site/align-content/spacearound.svg" alt="">  
+                    </div>
+                    <p>
+                        Isso alinha as linhas de um contêiner flexível quando há espaço extra no eixo cruzado, semelhante a como justify-content alinha itens individuais no eixo principal.
+                    </p>
+                    <div class="conteiner-scroll">
+                        <img id="align-content" src="assets/img-site/align-content/code.svg" alt="">
+                    </div>
+                    <p>
+                        <strong>normal (padrão)</strong>: os itens são embalados em sua posição padrão como se nenhum valor fosse definido.<br><br>
+
+                        <strong>flex-start/start</strong>: itens empacotados até o início do container. O (mais suportado) flex-start respeita a flex-direction enquanto start respeita a direção do modo de escrita.<br><br>
+                        
+                        <strong>flex-end / end</strong>: itens embalados até o final do container. O (mais suporte) flex-end respeita a direção flex enquanto end respeita a direção do modo de escrita.<br><br>
+                        
+                        <strong>center</strong>: itens centralizados no contêiner.<br><br>
+                        
+                        <strong>space-between</strong>: itens distribuídos uniformemente; a primeira linha está no início do contêiner enquanto a última está no final.<br><br>
+                        
+                        <strong>space-around</strong>: itens distribuídos uniformemente com espaço igual ao redor de cada linha.<br><br>
+                        
+                        <strong>space-evenly</strong>: os itens são distribuídos uniformemente com espaço igual ao redor deles.<br><br>
+                        
+                        <strong>stretch</strong>: as linhas se esticam para ocupar o espaço restante. 
+                    </p>
+                </div>
+
+                <div class="container-information">
+                    <h3>gap, row-gap, column-gap</h3><br>
+                    <div id="conteiner-gap">
+                    <img src="assets/img-site/gap/gap10.svg" alt="">
+                    <img src="assets/img-site/gap/gap30.svg" alt="">
+                    <img src="assets/img-site/gap/gap10x30.svg" alt="">
+                    </div>
+                    <p>
+                        Isso alinha as linhas de um contêiner flexível quando há espaço extra no eixo cruzado, semelhante a como justify-content alinha itens individuais no eixo principal.
+                    </p>
+
+                    <img id="img-gap" src="assets/img-site/gap/code.svg" alt="">
+                    <p>
+                        O comportamento pode ser pensado como uma calha mínima, como se a calha fosse maior de alguma forma (por causa de algo como justify-content: space-between;) então a lacuna só terá efeito se esse espaço acabar menor.<br><br>
+
+                        Não é exclusivamente para flexbox, o gap funciona também em layout de grade e multi-column.  
+                    </p>
+                </div>
+            </article>
+        </section>  
+      
+</body>
+</html>
