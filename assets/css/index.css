@@ -228,7 +228,19 @@ body{
   #son-propriets{
     width:100%;
   }
-  .container-information{
-    width: 95%;
+  #flex-remove{
+    width: 15rem;
+  }
+  #baseline{
+    width: 15rem;
+  }
+  #conteiner-gap img{
+    width:15rem;
+  }
+  #img-gap{
+    width:15rem;
+  }
+  .container-order img{
+    width:17rem;
   }
 }
